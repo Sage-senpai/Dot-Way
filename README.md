@@ -1,23 +1,20 @@
-# DOTique
+# DotWay
 
-**DOTique** is a Web3 fashion ecosystem built on **Polkadot**, merging digital identity, creativity, and ownership. Users can create fully customizable **DOTvatars** (3D avatars), design fashion items in an **NFT Fashion Studio** powered with **Unique Network**, join **NFT-gated communities**, showcase outfits on a social feed, and trade wearables on a marketplace. DOTique empowers creators and users to express themselves across metaverses, games, and social platforms.
+**DotWay** is a Web3 onboarding platform built on **Polkadot**, designed to simplify user migration and ecosystem adoption. Users can securely log in using social accounts (X/Twitter), connect their wallets, and seamlessly onboard into the Polkadot ecosystem. DotWay serves as a bridge for new users and migrators, guiding them through wallet setup, ecosystem exploration, and integration with Polkadot dApps. It prioritizes security, user experience, and ease of access while providing a foundation for future ecosystem tools.
 
 ---
 
 ## **Built With**
 
-- **React + Vite** – Modern web framework for fast development  
+- **Next.js** – Modern web framework for fast, SSR-enabled development  
 - **TypeScript** – Type-safe, scalable codebase  
-- **React Router DOM** – Routing and navigation  
-- **Zustand** – State management  
-- **@react-three/fiber** – 3D DOTvatar rendering  
-- **React Native Skia** – NFT Fashion Studio drawing engine  
-- **Supabase (PostgreSQL + Auth + Storage)** – Backend, database, and real-time features  
-- **Polkadot.js** – Wallet integration, NFT transactions, blockchain interactions  
-- **Unique Network** – NFT minting, metadata, wearables infrastructure  
-- **IPFS / Pinata** – Decentralized storage for assets  
-- **Node.js** – Scripts, utilities, and development tooling  
-- **Figma + polkadot.ui.com** – UI/UX design  
+- **TailwindCSS** – Utility-first CSS framework for responsive design  
+- **Framer Motion** – Smooth animations and interactive UI  
+- **Supabase (PostgreSQL + Auth + Storage)** – Backend, database, and authentication  
+- **Polkadot.js** – Wallet integration, account management, and blockchain interactions  
+- **Vercel** – Deployment and hosting platform  
+- **Figma** – UI/UX design and prototyping  
+- **pnpm** – Fast dependency management  
 
 ---
 
@@ -25,26 +22,31 @@
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/dotique.git
-cd dotique
+git clone https://github.com/your-username/dotway.git
+cd dotway
 
-install depedency 
+Install dependencies
+
 pnpm install
 # or
 npm install
 # or
 yarn install
 
+
 Set up environment variables
 Create a .env file in the root directory with:
 
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-VITE_UNIQUE_NETWORK_API_KEY=your_unique_network_key
-VITE_POLKADOT_ENDPOINT=wss://rpc.polkadot.io
+NEXT_PUBLIC_TWITTER_API_KEY=your-twitter-api-key
+NEXT_PUBLIC_DISCORD_WEBHOOK_URL=your-discord-webhook
+NEXT_PUBLIC_TELEGRAM_BOT_TOKEN=your-telegram-bot-token
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+NEXT_PUBLIC_POLKADOT_ENDPOINT=wss://rpc.polkadot.io
 
-Running the App
-# Run in development mode
+
+Run the App
+
 pnpm dev
 # or
 npm run dev
