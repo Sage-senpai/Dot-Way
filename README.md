@@ -22,8 +22,8 @@
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/your-username/dotway.git
-cd dotway
+git clone https://github.com/Sage-senpai/Dot-Way.git
+cd dot-way
 
 Install dependencies
 
